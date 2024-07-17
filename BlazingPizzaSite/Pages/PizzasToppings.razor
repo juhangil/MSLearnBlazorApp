@@ -1,0 +1,20 @@
+﻿@page "/pizzas-toppings"
+@using BlazingPizza.Data
+@using BlazingPizza.Component
+
+<div class="dialog-body">
+    <h1>Our Latest Pizzas and Topping</h1>
+    <Pizza PizzaName="Hawaiian" PizzaDescription="The one with pineapple" />
+    <PizzaTopping Topping="@(new Data.PizzaTopping() { Name = "Chilli Sauce", Ingredients = "Three kinds of chilli." })" />
+    
+    <br />
+    <br />
+
+    <CascadingValue Name="DealName" Value=@dealName>
+        <CascadingChild/>
+    </CascadingValue>
+</div
+
+@code{
+    private string dealName = "Throwback Thursday";
+}>
