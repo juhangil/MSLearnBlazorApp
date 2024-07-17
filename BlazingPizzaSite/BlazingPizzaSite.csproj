@@ -6,9 +6,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Pages\RoutingPizzas.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.32" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.32" />
     <PackageReference Include="System.Net.Http.Json" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\RoutingPizzas.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\RoutingPizzas.razor" />
   </ItemGroup>
 
 </Project>
